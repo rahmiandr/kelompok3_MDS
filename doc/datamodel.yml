@@ -1,0 +1,41 @@
+
+
+# Tables and columns
+- table: buku
+  columns:
+    id_buku: {key: yes}
+    id_penulis: {ref: penulis}
+    id_penerbit: {ref: penerbit}
+    ISBN:
+    bahasa:
+    tahun_terbit:
+    edisi:
+    jumlah_halaman:
+    deskripsi:
+    rating_buku:
+
+- table: penerbit
+  columns:
+    id_penerbit: {key: yes}
+    nama_penerbit: 
+    alamat: 
+
+
+- table: penulis
+  columns:
+    id_penulis: {key: yes}
+    nama_penulis: 
+    tempat_lahir: 
+    tanggal_lahir:
+    jumlah_buku:
+
+- table: user
+  columns:
+    id_user: {key: yes}
+    id_buku: {ref: buku}
+    nama_user:
+    tanggal_ulasan:
+    ulasan:
+    rating_user:
+
+
