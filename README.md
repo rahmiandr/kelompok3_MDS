@@ -1,2 +1,4 @@
-# kelompok3_MDS
-Repository ini merupakan project tugas akhir UTS STA1562
+<p align="center">
+  <img width="1000" height="300" src="image/logo.png">
+</p>
+
