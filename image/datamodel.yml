@@ -3,9 +3,9 @@
 # Tables and columns
 - table: novel
   columns:
-    id_novel: {key: yes, type: int}
-    id_penulis: {ref: penulis, type: int}
-    id_penerbit: {ref: penerbit, type: int}
+    id_novel: {key: yes, type: varchar}
+    id_penulis: {ref: penulis, type: varchar}
+    id_penerbit: {ref: penerbit, type: varchar}
     judul: {type: varchar}
     ISBN: {type: varchar}
     bahasa: {type: varchar}
@@ -17,14 +17,14 @@
 
 - table: penerbit
   columns:
-    id_penerbit: {key: yes, type: int}
+    id_penerbit: {key: yes, type: varchar}
     nama_penerbit: {type: varchar}
     alamat: {type: varchar}
 
 
 - table: penulis
   columns:
-    id_penulis: {key: yes, type: int}
+    id_penulis: {key: yes, type: varchar}
     nama_penulis: {type: varchar}
     tempat_lahir: {type: varchar}
     tanggal_lahir: {type: date}
@@ -32,8 +32,8 @@
 
 - table: user
   columns:
-    id_user: {key: yes, type: int}
-    id_novel: {ref: novel, type: int}
+    id_user: {key: yes, type: varchar}
+    id_novel: {ref: novel, type: varchar}
     nama_user: {type: varchar}
     tanggal_ulasan: {type: date}
     ulasan: {type: varchar}
