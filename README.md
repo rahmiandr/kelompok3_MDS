@@ -32,7 +32,8 @@
 ## :scroll: Tentang
 
 <div align="justify">
-Selamat datang di Goodreads Novel Indonesia Database, informasi lengkap untuk pecinta novel tanah air! Kami adalah database novel yang memberikan informasi lengkap seputar novel Indonesia yang tersedia di Goodreads, memungkinkan pengguna untuk menjelajahi dan menemukan berbagai jenis novel dari berbagai genre. Dengan berbagai judul dan penulis yang terdaftar, kami menyajikan informasi terkini dan ulasan berkualitas dari komunitas Goodreads yang dapat membantu para calon pembaca untuk menemukan novel yang dinginkan.
+Selamat datang di Goodreads Novel Indonesia Database.
+Ini adalah project akhir mata kuliah Manajemen Data Statistika.	Project ini memberikan informasi lengkap untuk pecinta novel tanah air! Kami adalah database novel yang memberikan informasi lengkap seputar **Novel Indonesia** yang tersedia di Goodreads, memungkinkan pengguna untuk menjelajahi dan menemukan berbagai novel terbaik di Indonesia. Dengan berbagai judul dan penulis yang terdaftar, kami menyajikan informasi terkini dan ulasan berkualitas dari komunitas Goodreads yang dapat membantu para calon pembaca untuk menemukan novel yang dinginkan.
 
 ## :rice_scene: Screenshot
 
@@ -51,7 +52,7 @@ Dokumentasi penggunaan aplikasi database. Anda dapat juga membuat dokumentasi li
 
 ## :exclamation: Requirements
 
-- Data diperoleh dari website [[goodreads](https://www.goodreads.com/list/show/67567.Novel_Indonesia_Terbaik) dengan memilih novel Indonesia Terbaik.    
+- Data diperoleh dari website [goodreads](https://www.goodreads.com/list/show/67567.Novel_Indonesia_Terbaik) dengan memilih novel Indonesia Terbaik.    
 - RDBMS yang digunakan adalah PostgreSQL dan ElephantSQL
 - Dashboard menggunakan `shinny`, `shinnythemes`, `bs4Dash`, `DT`, dan `dplyr` dari package R
 - 
@@ -95,8 +96,8 @@ Table penulis memberikan informasi kepada user mengenai identitas penulis novel 
 | id_penulis         | varchar(10)           | Id Penulis                      |
 | nama_penulis       | varchar(100)          | Nama Penulis                    |
 | tempat_lahir       | varchar(100)          | Tanggal Lahir Penulis           |
-| tanggal_lahir      | date 	               | Tanggal Lahir Penulis           |
-| jumlah_buku        | integer		           | Jumlah Buku yang Telah Terbit   |
+| tanggal_lahir      | date 	             | Tanggal Lahir Penulis           |
+| jumlah_buku        | integer		     | Jumlah Buku yang Telah Terbit   |
 
 dengan script SQL sebagai berikut:
 ```sql
@@ -109,11 +110,11 @@ CREATE TABLE IF NOT EXISTS public.penerbit (
 ```
 ### Create Table Penerbit
 Table penerbit memberikan informasi yang memudahkan user mengetahui informasi dari penerbit novel Indonesia tersebut melalui id penerbit, nama penerbit dan alamat penerbit terkait. Id penerbit adalah kode yang digunakan untuk membedakan nama penerbit yang sama pada tiap novel. Berikut deskripsi untuk setiap tabel penerbit.
-| Attribute          | Type                  | Description                     |
-|:-------------------|:----------------------|:--------------------------------|
-| id_dept            | character varying(10) | Id Departemen                   |
-| id_instansi        | character varying(10) | Id Instansi                     |
-| nama_instansi      | character varying(50) | Nama Instansi                   |
+| Attribute          | Type                  | Description                     	|
+|:-------------------|:----------------------|:---------------------------------|
+| id_penerbit        | varchar(10)	     | Id Penerbit		       	|
+| nama_penerbit      | varchar(100) 	     | Nama Penerbit Novel              |
+| alamat	     | varchar(100) 	     | Alamat Perusahaan Penerbit Novel |
 
 dengan script SQL sebagai berikut:
 ```sql
@@ -127,17 +128,21 @@ CREATE TABLE IF NOT EXISTS public.penulis (
 );
 ```
 ### Create Table Novel
-Table novel memberikan informasi kepada user mengenai beberapa identitas penulis jurnal. User dapat mengetahui id sinta dari penulis, nama penulis jurnal, asal penulis melalui id instnasi dan id departemen. Selain itu, terdapat informasi mengenai jumlah artikel yang telah diterbitkan oleh penulis baik terindeks scopus maupun google scholar. Berikut deskripsi untuk setiap tabel penulis.
-| Attribute                  | Type                  | Description                     		       |
-|:---------------------------|:----------------------|:------------------------------------------------|
-| id_sinta                   | character varying(10) | Id Sinta                       		       |
-| nama_penulis               | character varying(100)| Nama Penulis                   		       |
-| id_instansi                | character varying(10) | Id Instansi                     		       |	
-| id_dept                    | character varying(10) | Id Departemen                 		       |
-| subject_list               | character varying(150)| Bidang Ilmu yang Dikuasai Penulis               |
-| sinta_score_ovr    	     | smallint              | Jumlah Skor Sinta                               |
-| jumlah_article_scopus      | smallint		     | Jumlah Artikel yang Terbitkan oleh Scopus       |
-| jumlah_article_gscholar    | smallint              | Jumlah Artikel yang Terbitkan oleh Google Sholar|
+Table novel memberikan informasi kepada user mengenai informasi terkait novel Indonesia. User dapat mengetahui id novel, siapa penulis dan penerbit novel melalui id penulis dan id penerbit. Selain itu juga memuat informasi tak kalah penting seperti judul novel, ISBN, bahasa tulisan, tahun terbit novel, edisi keberapa, jumlah halaman novel, deskripsi novel, dan rating novel yang diberikan pembaca secara keseluruhan.
+| Attribute              | Type                  | Description                     		       |
+|:-----------------------|:----------------------|:----------------------------------------------------|
+| id_novel               | varchar(10) 		 | Id Novel                     	     	       |
+| id_penulis             | varchar(10) 		 | Id Penulis                  	    		       |
+| id_penerbit            | varchar(10)  	 | Id Penerbit                    		       |	
+| judul                  | varchar(200) 	 | Judul Novel                 		       	       |
+| ISBN              	 | varchar(50)		 | Kode Identifikasi Buku               	       |
+| bahasa    	    	 | varchar(15)           | Bahasa yabg Digunakan dalam Penulisan Nobel         |
+| tahun_terbit      	 | integer		 | Tahun Terbitnya Novel     			       |
+| edisi    		 | varchar(50)           | Versi khusus dari Novel			       |
+| jumlah_halaman    	 | integer               | Jumlah Halaman pada Novel			       |
+| deskripsi    		 | varchar(10000)        | Gambaran Singkat dari Isi Novel		       |
+| rating_novel    	 | integer               | Peringkat Rata-Rata dari para Pembaca	       |
+
 
 dengan script SQL sebagai berikut:
 ```sql
@@ -166,22 +171,16 @@ CREATE TABLE IF NOT EXISTS public.novel (
 ```
 
 ### Create Table Ulasan
-Table ulasan menyajikan informasi lengkap mengenai sebuah artikel. Selain dapat mengetahui judul, user juga akan mendapatkan informasi doi dan tahun terbit sebuah artikel. Nama penulis, team penulis hingga urutan penulis tersaji pada table ini. Tidak hanya itu, akan ditampilkan pula nama penerbit dan nama jurnal yang dipercayakan penulis untuk mempublikasikan karyanya. Lebih lanjut, informasi spesifik mengenai id sinta, id departemen, id instansi dan id paper dapat diketahui melalui table ini.  Berikut deskripsi untuk setiap tabel judul.
+Table ulasan menyajikan informasi lengkap mengenai informasi ulasan dari para pembaca novel. Selain dapat mengetahui judul, user juga akan mendapatkan informasi doi dan tahun terbit sebuah artikel. Nama penulis, team penulis hingga urutan penulis tersaji pada table ini. Tidak hanya itu, akan ditampilkan pula nama penerbit dan nama jurnal yang dipercayakan penulis untuk mempublikasikan karyanya. Lebih lanjut, informasi spesifik mengenai id sinta, id departemen, id instansi dan id paper dapat diketahui melalui table ini.  Berikut deskripsi untuk setiap tabel judul.
 | Attribute                  | Type                  | Description                     		       |
 |:---------------------------|:----------------------|:------------------------------------------------|
-| id_sinta                   | character varying(10) | Id Sinta                       		       |
-| id_instansi                | character varying(10) | Id Instansi                  		       |
-| id_dept                    | character varying(10) | Id Departemen                   		       |	
-| id_paper                   | character varying(10) | Id Jurnal/Artikel                	       |
-| judul_paper                | character varying(200)| Judul Paper                                     |
-| nama_penerbit    	     | character varying(100)| Nama Penerbit                                   |
-| nama_journal               | character varying(100)| nama_journal     			       |
-| jenulis_ke		     | smallint              | Urutan Nama Penulis pada Jurnal		       |
-| jumlah_penulis             | smallint		     | Jumlah Penulis                    	       |
-| team_penulis               | character varying(100)| Nama-Nama Penulis                               |
-| tahun_terbit    	     | character varying(4)  | Tahun Terbit                                    |
-| doi	                     | character varying(50) | Tautan Persisten yang Menghubungkan ke Jurnal   |
-| accred		     | character varying(10) | Akreditasi            			       |
+| id_user                    | varchar(10) 	     | Id User                       		       |
+| id_novel                   | varchar(10)           | Id Novel                 		       |
+| nama_user                  | varchar(100)          | Nama Pembaca yang Mengirim Ulasan               |	
+| tanggal_ulasan             | date                  | Tanggal Pembaca Mengirim Ulasan                 |
+| ulasan                     | varchar(10000)        | Komentar yang Diberikan Pembaca Terhadap Novel  |
+| rating    	             | integer               | Peringkat yang Diberikan Pembaca untuk Novel    |
+
 
 dengan script SQL sebagai berikut:              
 ```sql
