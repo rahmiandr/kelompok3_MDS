@@ -15,3 +15,9 @@ Selamat datang di Goodreads Novel Indonesia Database, informasi lengkap untuk pe
 <p align="center" style="width: 800px; height: 400px;">
   <img width="100%" height="100%" src="image/ERD MSD fix.png">
 </p>
+
+## Tim Pengembang
+Database Manager : Ratu Risha Ulfia (G1501231041)
+Frontend Developer : Yunia Hasnataeni (G1501231001)
+Backend Developer : [Rahmi Anadra](https://github.com/rahmiandr) (G1501231051)
+Technical Writer : Monica Rahma Fauziah (G1501231057)
