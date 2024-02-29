@@ -65,14 +65,11 @@ Menggambarkan struktur *primary key* **novel**, **penulis**, **penerbit** dan **
 
 
 ## :rotating_light: ERD
-ERD (Entity Relationship Diagram) menampilkan hubungan antara entitas dengan atribut. Pada project ini, entitas judul terdapat tiga atribut yang berhubungan dengan atribut pada entitas lain, yaitu id_sinta berhubungan dengan entitas penulis, id_instansi berhubungan dengan entitas instansi, id_dept berhubungan dengan entitas departemen.
-
-Selanjutnya, entitas penulis terdapat dua atribut yang berhubungan dengan atribut pada entitas lain, yaitu id_instansi berhubungan dengan entitas instansi, id_dept bergubungan dengan entitas departemen.
-
-Selain itu, entitas departemen dan entitas instansi saling berhubungan pada atribut id_instansi.
+ERD (Entity Relationship Diagram) menampilkan hubungan antara entitas dengan atribut. Pada project ini, entitas novel memiliki dua atribut yang berhubungan dengan atribut pada entitas lain, yaitu id_penulis berhubungan dengan entitas penulis dan id_penerbit berhubungan dengan entitas penerbit.
+Selain itu, entitas ulasan dan entitas novel saling berhubungan pada atribut id_novel.
 
 <p align="center" style="width: 800px; height: 400px;">
-  <img width="600" height="400" src="image/ERD.jpg">
+  <img width="600" height="400" src="image/ERD fix.png">
 </p>
 
 ## :heavy_check_mark: Deskripsi Data
@@ -80,7 +77,7 @@ Selain itu, entitas departemen dan entitas instansi saling berhubungan pada atri
 Berisi tentang tabel-tabel yang digunakan berikut dengan sintaks SQL DDL (CREATE).
 
 ### Create Database
-Databse Sinta Jurnal menyimpan informasi yang mewakili atribut data yang saling berhubungan untuk kemudian dianalisis.
+Databse Novel Indonesia menyimpan informasi yang mewakili atribut data yang saling berhubungan untuk kemudian dianalisis.
 ```sql
 CREATE DATABASE novel_indo
     WITH
