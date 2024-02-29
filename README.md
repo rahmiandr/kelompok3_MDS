@@ -21,3 +21,9 @@ Database Manager : Ratu Risha Ulfia (G1501231041)
 Frontend Developer : Yunia Hasnataeni (G1501231001)
 Backend Developer : [Rahmi Anadra](https://github.com/rahmiandr) (G1501231051)
 Technical Writer : Monica Rahma Fauziah (G1501231057)
+
+## :smiley_cat: Tim Pengembang
++ Database Manager : [Ratu Risha Ulfia](https://github.com/Raturisha) (G1501231041)
++ Frontend Developer : [Yunia Hasnataeni](https://github.com/YuniaHasnataeni) (G1501231001)
++ Backend Developer : [Rahmi Anadra](https://github.com/rahmiandr) (G1501231051)
++ Technical Writer : [Monica Rahma Fauziah](https://github.com/monicarahma) (G1501231057)
