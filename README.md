@@ -33,7 +33,7 @@
 
 <div align="justify">
 Selamat datang di Goodreads Novel Indonesia Database.
-Ini adalah project akhir mata kuliah Manajemen Data Statistika.	Project ini memberikan informasi lengkap untuk pecinta novel tanah air! Kami adalah database novel yang memberikan informasi lengkap seputar **Novel Indonesia** yang tersedia di Goodreads, memungkinkan pengguna untuk menjelajahi dan menemukan berbagai novel terbaik di Indonesia. Dengan berbagai judul dan penulis yang terdaftar, kami menyajikan informasi terkini dan ulasan berkualitas dari komunitas Goodreads yang dapat membantu para calon pembaca untuk menemukan novel yang dinginkan.
+Ini adalah project akhir mata kuliah Manajemen Data Statistika.	Project ini memberikan informasi lengkap untuk pecinta novel tanah air! Kami adalah database novel yang memberikan informasi lengkap seputar Novel Indonesia yang tersedia di Goodreads, memungkinkan pengguna untuk menjelajahi dan menemukan berbagai novel terbaik di Indonesia. Dengan berbagai judul dan penulis yang terdaftar, kami menyajikan informasi terkini dan ulasan berkualitas dari komunitas Goodreads yang dapat membantu para calon pembaca untuk menemukan novel yang dinginkan.
 
 ## :rice_scene: Screenshot
 
@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS public.novel (
     edisi character varying(50),
     jumlah_halaman integer,
     deskripsi character varying(10000),
-    rating_buku integer,
+    rating_novel integer,
 	CONSTRAINT novel_pkey PRIMARY KEY (id_novel),
     CONSTRAINT novel_id_penulis_fkey FOREIGN KEY (id_penulis)
         REFERENCES public.penulis (id_penulis) MATCH SIMPLE
