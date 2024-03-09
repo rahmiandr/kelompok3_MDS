@@ -73,11 +73,12 @@ Selain itu, entitas ulasan dan entitas novel saling berhubungan pada atribut id_
 </p>
 
 ## :heavy_check_mark: Deskripsi Data
+Goodreads Novel Indonesia adalah sebuah database novel-novel terbaik Indonesia yang ditulis oleh putra-putri terbaik bangsa. Data ini diambil berdasarkan rating yang telah diberikan pembaca sehingga menghasilkan novel-novel terbaik dengan rating tertinggi. Data yang digunakan meliputi data Novel, Penulis, Penerbit, dan Ulasan.
 
 Berisi tentang tabel-tabel yang digunakan berikut dengan sintaks SQL DDL (CREATE).
 
 ### Create Database
-Databse Novel Indonesia menyimpan informasi yang mewakili atribut data yang saling berhubungan untuk kemudian dianalisis.
+Database Novel Indonesia menyimpan informasi yang mewakili atribut data yang saling berhubungan untuk kemudian dianalisis.
 ```sql
 CREATE DATABASE novel_indo
     WITH
