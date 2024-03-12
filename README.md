@@ -202,19 +202,25 @@ CREATE TABLE IF NOT EXISTS public.ulasan (
 ```
 .
 ├── app           # ShinyApps
-│   ├── css
-│   │   ├── **/*.css
 │   ├── server.R
 │   └── ui.R
+│
 ├── data 
-│   ├── csv
-│   │   ├── **/*.css
-│   └── sql
-|       └── db.sql
-├── src           # Project source code
-├── doc           # Doc for the project
-├── .gitignore
-├── LICENSE
+│   ├── novel.csv
+│   ├── penerbit.csv
+│   ├──	penulis.csv
+|   └── ulasan.csv
+│
+├── image
+│   ├── ERD fix.png
+│   ├── Skema MDS fix.png
+│   ├──	dashboard.png
+|   └──	logo.png
+│   
+├── src		# Project source code
+│   ├──	conn_elephantsql.R
+|   └──	inputdatasql.R
+| 
 └── README.md
 ```
 
