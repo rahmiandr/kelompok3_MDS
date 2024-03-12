@@ -7,7 +7,7 @@ DB <- dbConnect(
   host="topsy.db.elephantsql.com", # Server
   # port=5432,
   user="uafemknk", # User & Default database
-  password="Uxf_vl9JGfj4X283QHpW95GYSWD9DCbQ" # Password
+  password="vHlk8GXVd5l6q5zXphKTF6mbKpgyN-2q" # Password
 )
 
 
