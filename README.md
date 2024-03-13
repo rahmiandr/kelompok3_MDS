@@ -44,7 +44,6 @@ Ini adalah project akhir mata kuliah Manajemen Data Statistika.	Project ini memb
 ## :dvd: Demo
 
 Berikut merupakan link untuk shinnyapps atau dashboard dari project kami:
-(http://127.0.0.1:5630/)
 
 ## :blue_book: Dokumentasi 
 
