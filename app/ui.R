@@ -123,12 +123,7 @@ fluidPage(
                     ),
                     tags$li(
                       tags$p(
-                        tags$strong("Cari Penulis -"), " Pencarian nama penulis dengan memanfaatkan fitur penyaringan tempat lahir, tahun lahir, dan jumlah buku. Lengkapi kriteria penyaringan agar didapatkan penulis yang relevan."
-                      )
-                    ),
-                    tags$li(
-                      tags$p(
-                        tags$strong("Cari Penerbit -"), " Pencarian nama penerbit dengan memanfaatkan fitur penyaringan alamat penerbit. Lengkapi kriteria penyaringan agar didapatkan penerbit yang relevan."
+                        tags$strong("Cari Ulasan Pembaca -"), " Pencarian ulasan pembaca dengan memanfaatkan fitur penyaringan judul novel. Lengkapi kriteria penyaringan agar didapatkan ulasan dari pembaca yang relevan."
                       )
                     )
                   ),
