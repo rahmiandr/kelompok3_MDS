@@ -38,7 +38,7 @@ Ini adalah project akhir mata kuliah Manajemen Data Statistika.	Project ini memb
 ## :rice_scene: Screenshot
 
 <p align="center">
-  <img width="900" height="500" src="image/dashboard.png">
+  <img width="900" height="500" src="image/Dashboard.png">
 </p>
 
 ## :dvd: Demo
