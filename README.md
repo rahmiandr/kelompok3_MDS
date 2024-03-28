@@ -11,17 +11,15 @@
 [Screenshot](#rice_scene-screenshot)
 •
 [Demo](#dvd-demo)
-•
-[Dokumentasi](#blue_book-dokumentasi)
 
 </div>
 
 ## :bookmark_tabs: Menu
 
 - [Tentang](#scroll-tentang)
+- [Informasi](#scroll-informasi)
 - [Screenshot](#rice_scene-screenshot)
 - [Demo](#dvd-demo)
-- [Dokumentasi](#blue_book-dokumentasi)
 - [Requirements](#exclamation-requirements)
 - [Skema Database](#floppy_disk-skema-database)
 - [ERD](#rotating_light-erd)
@@ -33,7 +31,12 @@
 
 <div align="justify">
 Selamat datang di Goodreads Novel Indonesia Database.
-Ini adalah project akhir mata kuliah Manajemen Data Statistika.	Project ini memberikan informasi lengkap untuk pecinta novel tanah air! Kami adalah database novel yang memberikan informasi lengkap seputar Novel Indonesia yang tersedia di Goodreads, memungkinkan pengguna untuk menjelajahi dan menemukan berbagai novel terbaik di Indonesia. Dengan berbagai judul dan penulis yang terdaftar, kami menyajikan informasi terkini dan ulasan berkualitas dari komunitas Goodreads yang dapat membantu para calon pembaca untuk menemukan novel yang dinginkan.
+Goodreads Novel Indonesia adalah teman setia para pencinta buku, membantu Anda menemukan novel-novel yang sesuai dengan selera dan minat Anda. Sumber daya lengkap untuk menemukan dan menikmati novel-novel terbaik dari penulis Indonesia! Dari kisah-kisah yang mendebarkan hingga petualangan yang memukau, kami hadir untuk memudahkan Anda menemukan cerita-cerita yang memikat hati dan pikiran. Jelajahi dunia yang kaya dengan judul-judul menarik dan penulis berbakat, serta nikmati ulasan-ulasan berkualitas dari komunitas pembaca kami. Temukan petualangan baru di setiap halaman, hanya di Goodreads Novel Indonesia!
+
+Dengan informasi terkini dan ulasan yang dapat dipercaya, kami siap membawa Anda dalam perjalanan menemukan cerita-cerita tak terlupakan. Jadikan Goodreads Novel Indonesia sebagai panduan Anda dalam dunia literasi Indonesia yang kaya dan memikat!
+
+## :scroll: Informasi
+Projek ini merupakan tugas akhir mata kuliah Praktikum Manajemen Data Statistika, Program Magister Statistika dan Sains Data, IPB University. Projek ini mengambil topik tentang Database Novel Indonesia. Tugas akhir ini membahas terkait novel, penulis, penerbit, serta ulasan yang telah diberikan pembaca. Dataset yang digunakan berasal dari website [goodreads](https://www.goodreads.com/list/show/67567.Novel_Indonesia_Terbaik). Hasil yang diharapkan adalah berupa platform basis data dalam bentuk aplikasi web agar memudahkan pengguna dalam mencari referensi novel yang mereka inginkan berdasarkan beberapa pilihan seperti penulis, penerbit, rating, serta dapat mengetahui ulasan dari pengguna lain untuk lebih tau secara mendalam terkait novel yang diinginkan.
 
 ## :rice_scene: Screenshot
 
@@ -44,10 +47,6 @@ Ini adalah project akhir mata kuliah Manajemen Data Statistika.	Project ini memb
 ## :dvd: Demo
 
 Berikut merupakan link untuk shinnyapps atau dashboard dari project kami: https://rahmiandr.shinyapps.io/project_MDSkel3/
-
-## :blue_book: Dokumentasi 
-
-Dokumentasi penggunaan aplikasi database. Anda dapat juga membuat dokumentasi lives menggunakan readthedocs.org (opsional).
 
 ## :exclamation: Requirements
 
