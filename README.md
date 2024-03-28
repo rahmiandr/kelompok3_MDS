@@ -10,7 +10,7 @@
 •
 [Informasi](#pushpin-informasi)
 •
-[Screenshot](#rice_scene-screenshot)
+[Screenshot](#desktop_computer-screenshot)
 •
 [Demo](#dvd-demo)
 
@@ -20,14 +20,14 @@
 
 - [Tentang](#scroll-tentang)
 - [Informasi](pushpin-informasi)
-- [Screenshot](#rice_scene-screenshot)
+- [Screenshot](#desktop_computer-screenshot)
 - [Demo](#dvd-demo)
 - [Requirements](#exclamation-requirements)
 - [Skema Database](#floppy_disk-skema-database)
 - [ERD](#rotating_light-erd)
 - [Deskripsi Data](#heavy_check_mark-deskripsi-data)
 - [Struktur Folder](#open_file_folder-struktur-folder)
-- [Tim Pengembang](#smiley_cat-tim-pengembang)
+- [Tim Pengembang](#busts_in_silhouette-tim-pengembang)
 
 ## :scroll: Tentang
 
@@ -40,7 +40,7 @@ Dengan informasi terkini dan ulasan yang dapat dipercaya, kami siap membawa Anda
 ## :pushpin: Informasi
 Projek ini merupakan tugas akhir mata kuliah Praktikum Manajemen Data Statistika, Program Magister Statistika dan Sains Data, IPB University. Projek ini mengambil topik tentang Database Novel Indonesia. Tugas akhir ini membahas terkait novel, penulis, penerbit, serta ulasan yang telah diberikan pembaca. Dataset yang digunakan berasal dari website [goodreads](https://www.goodreads.com/list/show/67567.Novel_Indonesia_Terbaik). Hasil yang diharapkan adalah berupa platform basis data dalam bentuk aplikasi web agar memudahkan pengguna dalam mencari referensi novel yang mereka inginkan berdasarkan beberapa pilihan seperti penulis, penerbit, rating, serta dapat mengetahui ulasan dari pengguna lain untuk lebih tau secara mendalam terkait novel yang diinginkan.
 
-## :rice_scene: Screenshot
+## :desktop_computer: Screenshot
 
 <p align="center">
   <img width="900" height="500" src="image/Dashboard.png">
@@ -226,7 +226,7 @@ CREATE TABLE IF NOT EXISTS public.ulasan (
 └── README.md
 ```
 
-## :smiley_cat: Tim Pengembang
+## :busts_in_silhouette: Tim Pengembang
 + Database Manager : [Ratu Risha Ulfia](https://github.com/Raturisha) (G1501231041)
 + Frontend Developer : [Yunia Hasnataeni](https://github.com/YuniaHasnataeni) (G1501231001)
 + Backend Developer : [Rahmi Anadra](https://github.com/rahmiandr) (G1501231051)
