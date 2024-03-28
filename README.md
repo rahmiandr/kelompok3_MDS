@@ -214,7 +214,9 @@ CREATE TABLE IF NOT EXISTS public.ulasan (
 │   ├── ERD fix.png
 │   ├── Skema MDS fix.png
 │   ├──	dashboard.png
-|   └──	logo.png
+|   ├──	logo.png
+|   ├──	logobaru.png
+|   └── logo-removebg.png
 │   
 ├── src		# Project source code
 │   ├──	conn_elephantsql.R
