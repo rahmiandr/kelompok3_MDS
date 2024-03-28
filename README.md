@@ -8,7 +8,7 @@
 
 [Tentang](#scroll-tentang)
 •
-[Informasi](#scroll-pin)
+[Informasi](#scroll-pushpin)
 •
 [Screenshot](#rice_scene-screenshot)
 •
@@ -19,7 +19,7 @@
 ## :bookmark_tabs: Menu
 
 - [Tentang](#scroll-tentang)
-- [Informasi](#scroll-pin)
+- [Informasi](#scroll-pushpin)
 - [Screenshot](#rice_scene-screenshot)
 - [Demo](#dvd-demo)
 - [Requirements](#exclamation-requirements)
