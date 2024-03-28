@@ -37,7 +37,7 @@ Goodreads Novel Indonesia adalah teman setia para pencinta buku, membantu Anda m
 
 Dengan informasi terkini dan ulasan yang dapat dipercaya, kami siap membawa Anda dalam perjalanan menemukan cerita-cerita tak terlupakan. Jadikan Goodreads Novel Indonesia sebagai panduan Anda dalam dunia literasi Indonesia yang kaya dan memikat!
 
-## :scroll: Informasi
+## :information_source-informasi
 Projek ini merupakan tugas akhir mata kuliah Praktikum Manajemen Data Statistika, Program Magister Statistika dan Sains Data, IPB University. Projek ini mengambil topik tentang Database Novel Indonesia. Tugas akhir ini membahas terkait novel, penulis, penerbit, serta ulasan yang telah diberikan pembaca. Dataset yang digunakan berasal dari website [goodreads](https://www.goodreads.com/list/show/67567.Novel_Indonesia_Terbaik). Hasil yang diharapkan adalah berupa platform basis data dalam bentuk aplikasi web agar memudahkan pengguna dalam mencari referensi novel yang mereka inginkan berdasarkan beberapa pilihan seperti penulis, penerbit, rating, serta dapat mengetahui ulasan dari pengguna lain untuk lebih tau secara mendalam terkait novel yang diinginkan.
 
 ## :rice_scene: Screenshot
